@@ -18,9 +18,13 @@ npx hardhat test solidity [--coverage]
 You can see deployed contracts on Arbitrum Sepolia public test net here:
 
 ERC-20 : https://sepolia.arbiscan.io/address/0x46920Db850342931A759c138c4CA920ac2B63DB7#code
-DEX : 
+Factory : https://sepolia.arbiscan.io/address/0xaa70beca4f8472e0a6aa8c927e9a5a9861c57415#code
+Pair (Auto-generated nt Factory) : https://sepolia.arbiscan.io/address/0x7fedb8a2fb5b8bf4c4a0b6414eb5e4362a03d290#code
 
 Below is Hardhat 3 Readme.txt
+
+-------------------------------------------------------------
+
 
 # Sample Hardhat 3 Beta Project (`node:test` and `viem`)
 
