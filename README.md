@@ -1,3 +1,22 @@
+# Experimental ERC20 and DEX contract for testnet deployment
+Hardhat, node.js, foundry
+Follow this tutorial to download Dependecies, test & deploy the contracts : https://hardhat.org/docs/tutorial
+
+ERC20 with mintToOwner function, which allows to mint new tokens to Contract Deployer
+- contracts/Erc20Token.sol : OpenZeppelin ERC-20 with additional methods to mint new Token to Owner and permit Spender to use ERC-20
+
+DEX supports Uniswap V2 style constant-product AMM contracts(Factory, Pair contracts)
+- contracts/Factory.sol : create new pair of ERC20 & track pairs
+- contracts/Pair.sol : add/remove liquidity, swap, track reserves and emit events
+
+*.t.sol -> test code for each contracts
+```shell
+npx hardhat test solidity [--coverage]
+```
+
+
+Below is Hardhat 3 Readme.txt
+
 # Sample Hardhat 3 Beta Project (`node:test` and `viem`)
 
 This project showcases a Hardhat 3 Beta project using the native Node.js test runner (`node:test`) and the `viem` library for Ethereum interactions.
