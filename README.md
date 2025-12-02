@@ -1,11 +1,12 @@
 # Experimental ERC20 and DEX contract for testnet deployment
 Hardhat, node.js, foundry
+
 Follow this tutorial to download Dependecies, test & deploy the contracts : https://hardhat.org/docs/tutorial
 
 ERC20 with mintToOwner function, which allows to mint new tokens to Contract Deployer
 - contracts/Erc20Token.sol : OpenZeppelin ERC-20 with additional methods to mint new Token to Owner and permit Spender to use ERC-20
 
-DEX supports Uniswap V2 style constant-product AMM contracts(Factory, Pair contracts)
+DEX supporting Uniswap V2 style constant-product AMM contracts(Factory, Pair contracts)
 - contracts/Factory.sol : create new pair of ERC20 & track pairs
 - contracts/Pair.sol : add/remove liquidity, swap, track reserves and emit events
 
@@ -14,6 +15,10 @@ DEX supports Uniswap V2 style constant-product AMM contracts(Factory, Pair contr
 npx hardhat test solidity [--coverage]
 ```
 
+You can see deployed contracts on Arbitrum Sepolia public test net here:
+
+ERC-20 : https://sepolia.arbiscan.io/address/0x46920Db850342931A759c138c4CA920ac2B63DB7#code
+DEX : 
 
 Below is Hardhat 3 Readme.txt
 
